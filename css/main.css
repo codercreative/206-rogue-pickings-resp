@@ -1,55 +1,5 @@
 
-
-/* ----------- Tablets larger than 768px wide ----------- */
-@media all and (min-width: 768px) {
- 	.bottom-section{
- 		display: flex;
- 		justify-content: space-between;
-     	align-items: flex-start;
-     	border-top: 1px solid #eee;
- 	}
-
- 	.section-one,
-    .section-two,
-    .section-three {
-         border-top: none;
-         display: flex;
-         justify-content: center;
-         flex-basis: 30%;
-         align-content: flex-start;
-         text-align: top;
-     }
-
-     .section-two {
-         border-left: 1px solid #eee;
-         border-right: 1px solid #eee;
-         padding: 0 20px;
-     }
-
-     .section-three {
-     	padding-left: 20px;
-     }
- }
-
-/* ----------- Monitors larger than 1200px wide ----------- */
-@media all and (min-width: 1200px) {
- 	header {
- 		display: flex;
-        justify-content: space-between;
-     }
-
-     header h1 {
-         width: 30%;
-         padding: 0;
-         border-bottom: none;
-         text-align: left;
-     }
-     
- 	header nav ul {
-     display: flex;
-     justify-content: space-between;
-   	}
- }
+/* ----------- Mobile Size - Mobile First----------- */
 
 html {
 	font-size: 16px;
@@ -65,7 +15,7 @@ body {
 
 .container{
 	max-width: 1200px;
-	width: 90%; /* why?*/
+	width: 90%; 
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -226,3 +176,60 @@ footer span {
 	color: #77a466;
 	font-size: 0.875em;
 }
+
+/* ----------- Tablets larger than 768px wide ----------- */
+@media only screen and (min-width: 768px) {
+ 	.bottom-section{
+ 		display: flex;
+ 		justify-content: space-between;
+     	align-items: flex-start;
+     	border-top: 1px solid #eee;
+ 	}
+
+ 	.section-one,
+    .section-two,
+    .section-three {
+         border-top: none;
+         display: flex;
+         justify-content: center;
+         flex-basis: 30%;
+         align-content: flex-start;
+         text-align: top;
+     }
+
+     .section-two {
+         border-left: 1px solid #eee;
+         border-right: 1px solid #eee;
+         padding: 0 20px;
+     }
+
+     .section-three {
+     	padding-left: 20px;
+     }
+ }
+
+/* ----------- Monitors larger than 1200px wide ----------- */
+@media all and (min-width: 1200px) {
+ 	header {
+ 		display: flex;
+        justify-content: space-between;
+     }
+
+     header h1 {
+         width: 30%;
+         padding: 0;
+         border-bottom: none;
+         text-align: left;
+     }
+
+     header nav {
+     	width: 40%;
+     }
+     
+ 	header nav ul {
+     display: flex;
+     justify-content: space-between;
+   	}
+ }
+
+
